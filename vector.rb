@@ -14,4 +14,16 @@ class Vector
     n = @x**2 + @y**2
     n = Math.sqrt(n)
   end
+
+  def add(v)
+    Vector.new(@x+v.x,@y+v.y)
+  end
+
+  def x
+    @x
+  end
+  
+  def y
+    @y
+  end
 end
